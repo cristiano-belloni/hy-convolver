@@ -86,7 +86,6 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
 
         this.successCallback = function (decoded) {
             console.log ("Decode succeeded!");
-
             this.convolver.buffer = decoded;
 
             this.decoded_arrayL = decoded.getChannelData (0);
