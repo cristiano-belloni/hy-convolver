@@ -11,8 +11,8 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
         version: '0.0.1-alpha1',
         ui: {
             type: 'canvas',
-            width: 428,
-            height: 348
+            width: 348,
+            height: 224
         }
     };
 
@@ -107,7 +107,7 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
                     width: this.canvas.width - 10 * 2,
                     height: 148,
                     isListening: true,
-                    waveColor: '#CC0000',
+                    waveColor: '#00CC00',
                     transparency: 0.8
                 };
 
