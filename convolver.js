@@ -6,7 +6,7 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
     var pluginConf = {
         name: "Convolver",
         osc: false,
-        audioIn: 0,
+        audioIn: 1,
         audioOut: 1,
         version: '0.0.1-alpha1',
         ui: {
