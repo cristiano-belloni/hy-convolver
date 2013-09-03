@@ -198,9 +198,6 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
        the plugin is requested [e.g: displayed on screen] */
     function initPlugin (initArgs) {
 
-        console.log ("HI");
-        debugger;
-
         var args = initArgs;
 
         console.log ("initArgs", initArgs);
