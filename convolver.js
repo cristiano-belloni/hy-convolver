@@ -11,8 +11,8 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
         version: '0.0.1-alpha1',
         ui: {
             type: 'canvas',
-            width: 348,
-            height: 224
+            width: 346,
+            height: 177
         }
     };
 
@@ -41,15 +41,6 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
         this.viewWidth = args.canvas.width;
         this.viewHeight = args.canvas.height;
         this.canvas = args.canvas;
-
-        /*this.handler = args.OSCHandler;
-
-        var oscCallback = function (message) {
-           console.log ("KSP-001 received message: ", message);
-           var dest = message.toString();
-        }.bind(this);
-
-        this.handler.setCallback(oscCallback); */
 
         // Member methods
         this.drop = function (evt) {
