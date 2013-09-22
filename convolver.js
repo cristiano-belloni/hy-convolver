@@ -93,10 +93,10 @@ define(['require', 'github:janesconference/KievII@jspm0.5/dist/kievII'], functio
                 // Wavebox parameters
                 var waveboxArgs = {
                     ID: waveID,
-                    top: 35,
+                    top: 10,
                     left: 10,
                     width: this.canvas.width - 10 * 2,
-                    height: 148,
+                    height: 157,
                     isListening: true,
                     waveColor: '#00CC00',
                     transparency: 0.8
