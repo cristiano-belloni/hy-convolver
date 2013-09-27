@@ -11,8 +11,8 @@ define(['require', 'github:janesconference/KievII@0.6.0/kievII'], function(requi
         version: '0.0.1-alpha1',
         ui: {
             type: 'canvas',
-            width: 348,
-            height: 224
+            width: 346,
+            height: 177
         }
     };
 
@@ -41,15 +41,6 @@ define(['require', 'github:janesconference/KievII@0.6.0/kievII'], function(requi
         this.viewWidth = args.canvas.width;
         this.viewHeight = args.canvas.height;
         this.canvas = args.canvas;
-
-        /*this.handler = args.OSCHandler;
-
-        var oscCallback = function (message) {
-           console.log ("KSP-001 received message: ", message);
-           var dest = message.toString();
-        }.bind(this);
-
-        this.handler.setCallback(oscCallback); */
 
         // Member methods
         this.drop = function (evt) {
@@ -102,10 +93,10 @@ define(['require', 'github:janesconference/KievII@0.6.0/kievII'], function(requi
                 // Wavebox parameters
                 var waveboxArgs = {
                     ID: waveID,
-                    top: 35,
+                    top: 10,
                     left: 10,
                     width: this.canvas.width - 10 * 2,
-                    height: 148,
+                    height: 154,
                     isListening: true,
                     waveColor: '#00CC00',
                     transparency: 0.8
