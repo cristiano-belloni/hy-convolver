@@ -165,7 +165,7 @@ define(['require', 'github:janesconference/KievII@0.6.0/kievII'], function(requi
             };
             return obj;
         };
-        args.hostInterface.setSaveState (saveState.bind(this));
+        args.hostInterface.setSaveState (saveState.bind (this));
 
         if (args.initialState && args.initialState.bin) {
             /* Load data */
