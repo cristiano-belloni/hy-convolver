@@ -165,7 +165,7 @@ define(['require', 'github:janesconference/KievII@0.6.0/kievII'], function(requi
             };
             return obj;
         };
-        args.hostInterface.setSaveState (saveState);
+        args.hostInterface.setSaveState (saveState.bind(this));
 
         if (args.initialState && args.initialState.bin) {
             /* Load data */
@@ -193,9 +193,7 @@ define(['require', 'github:janesconference/KievII@0.6.0/kievII'], function(requi
         console.log ("initArgs", initArgs);
 
         var requireErr = function (err) {
-            var failedId = err.requireModules && err.requireModules[0];
-            requirejs.undef(failedId);
-            args.hostInterface.setInstanceStatus ('fatal', {description: 'Error initializing plugin: ' + failedId});
+            args.hostInterface.setInstanceStatus ('fatal', {description: 'Error loading plugin resources.'});
         }.bind(this);
 
         console.log ("imgResources", imgResources);
